@@ -7,9 +7,10 @@
     e2fs
     e2fs_exec
     hal_cas_hwservice
+    hal_neuralnetworks_hwservice
     hal_tetheroffload_hwservice
     kmsg_debug_device
-    memcg_device
+    netd_stable_secret_prop
     sysfs_fs_ext4_features
     timezone_service
     tombstoned_java_trace_socket))

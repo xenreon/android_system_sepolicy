@@ -114,6 +114,9 @@ allow system_server hal_camera:process { getsched setsched };
 allow system_server mediaserver:process { getsched setsched };
 allow system_server bootanim:process { getsched setsched };
 
+# Allow system_server to write to cameraserver's /proc/<pid>/timerslack_ns
+allow system_server cameraserver:file w_file_perms;
+
 # Read /proc/pid data for all domains. This is used by ProcessCpuTracker
 # within system_server to keep track of memory and CPU usage for
 # all processes on the device. In addition, /proc/pid files access is needed
@@ -191,6 +194,7 @@ hal_client_domain(system_server, hal_graphics_allocator)
 hal_client_domain(system_server, hal_ir)
 hal_client_domain(system_server, hal_light)
 hal_client_domain(system_server, hal_memtrack)
+hal_client_domain(system_server, hal_neuralnetworks)
 hal_client_domain(system_server, hal_oemlock)
 allow system_server hal_omx_hwservice:hwservice_manager find;
 allow system_server hidl_token_hwservice:hwservice_manager find;
@@ -248,6 +252,7 @@ allow system_server {
   hal_bluetooth_server
   hal_camera_server
   hal_graphics_composer_server
+  hal_sensors_server
   hal_vr_server
   mediacodec # TODO(b/36375899): hal_omx_server
 }:process { signal };
