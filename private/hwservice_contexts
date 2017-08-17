@@ -37,6 +37,7 @@ android.hardware.renderscript::IDevice                          u:object_r:hal_r
 android.hardware.sensors::ISensors                              u:object_r:hal_sensors_hwservice:s0
 android.hardware.soundtrigger::ISoundTriggerHw                  u:object_r:hal_audio_hwservice:s0
 android.hardware.thermal::IThermal                              u:object_r:hal_thermal_hwservice:s0
+android.hardware.thermal::IThermalCallback                      u:object_r:thermalcallback_hwservice:s0
 android.hardware.tv.cec::IHdmiCec                               u:object_r:hal_tv_cec_hwservice:s0
 android.hardware.tv.input::ITvInput                             u:object_r:hal_tv_input_hwservice:s0
 android.hardware.usb::IUsb                                      u:object_r:hal_usb_hwservice:s0
@@ -51,5 +52,6 @@ android.hidl.base::IBase                                        u:object_r:hidl_
 android.hidl.manager::IServiceManager                           u:object_r:hidl_manager_hwservice:s0
 android.hidl.memory::IMapper                                    u:object_r:hidl_memory_hwservice:s0
 android.hidl.token::ITokenManager                               u:object_r:hidl_token_hwservice:s0
+android.system.net.netd::INetd                                  u:object_r:system_net_netd_hwservice:s0
 android.system.wifi.keystore::IKeystore                         u:object_r:system_wifi_keystore_hwservice:s0
 *                                                               u:object_r:default_android_hwservice:s0
