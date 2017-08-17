@@ -412,3 +412,4 @@ expandattribute hal_wifi_supplicant_server false;
 
 attribute display_service_server;
 attribute wifi_keystore_service_server;
+attribute untrusted_app_visible_hwservice;

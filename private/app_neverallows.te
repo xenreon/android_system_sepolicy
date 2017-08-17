@@ -152,6 +152,7 @@ neverallow all_untrusted_apps {
   # access
   -hal_omx_hwservice
   -hal_cas_hwservice
+  -untrusted_app_visible_hwservice
 }:hwservice_manager find;
 # HwBinder services offered by core components (as opposed to vendor components)
 # are considered somewhat safer due to point #2 above.
