@@ -405,17 +405,12 @@ attribute hal_wifi;
 
 
 # Domain type used for debugfs access
-attribute qti_debugfs_domain;
 expandattribute hal_wifi true;
 attribute hal_wifi_client;
 expandattribute hal_wifi_client true;
 attribute hal_wifi_server;
 
 # Domain type used by test teams
-attribute qti_testscripts_domain;
-attribute hal_wifi_keystore;
-attribute hal_wifi_keystore_client;
-attribute hal_wifi_keystore_server;
 expandattribute hal_wifi_server false;
 attribute hal_wifi_offload;
 expandattribute hal_wifi_offload true;

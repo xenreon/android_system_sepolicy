@@ -32,7 +32,6 @@ neverallow hal_configstore_server domain:{
   netlink_netfilter_socket netlink_generic_socket netlink_scsitransport_socket
   netlink_rdma_socket netlink_crypto_socket
 } *;
-
 neverallow hal_configstore_server {
   domain
   -hal_configstore_server
